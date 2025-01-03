@@ -16,7 +16,7 @@ class Config:
 class LocalConfig(Config):
     """Local development configurations."""
     ENV = 'LOCAL'
-    EMAIL = os.getenv('EMAIL', 'fname.lname@takeda.com')
+    EMAIL = os.getenv('EMAIL', 'fname.lname@gmail.com')
 
 class DevelopmentConfig(Config):
     """Development-specific configurations."""
