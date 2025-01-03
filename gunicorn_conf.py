@@ -5,7 +5,7 @@ import gunicorn
 
 app_env = os.getenv("APP_ENV", None)
 
-gunicorn.SERVER_SOFTWARE = 'Takeda Quality Deviations Generator'
+gunicorn.SERVER_SOFTWARE = 'Flask API'
 gunicorn.SERVER = 'undisclosed'
 if app_env is None or app_env != "LOCAL":
     workers = (2 * multiprocessing.cpu_count()) + 1
